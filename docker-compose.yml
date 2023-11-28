@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres
+    container_name: postgres_practice
+    environment:
+      - POSTGRES_DB=book_store
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=hungyb123
+    ports:
+      - "5435:5432"
+    restart: on-failure
