@@ -7,9 +7,9 @@ const sequelize = new Sequelize(dbconfig.DB, dbconfig.USER, dbconfig.PASSWORD, {
   dialect: 'postgres',
 });
 
-// (async () => {
-//   await sequelize.sync();
-// })();
+(async () => {
+  await sequelize.sync();
+})();
 
 const db = {
   sequelize: sequelize,
